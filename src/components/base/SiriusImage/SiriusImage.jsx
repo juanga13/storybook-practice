@@ -14,6 +14,7 @@ export const SiriusImage = ({src, width, height}) => {
 }
 
 SiriusImage.propTypes = {
+    src: PropTypes.string, // NOTE: not exactly correct, but avoids error and its not 'any'
     width: PropTypes.number,
     height: PropTypes.number,
 }

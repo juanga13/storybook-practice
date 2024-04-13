@@ -1,0 +1,6 @@
+{
+  "buildScriptName": "deploy-storybook",
+  "debug": true,
+  "projectId": "",
+  "zip": true
+}

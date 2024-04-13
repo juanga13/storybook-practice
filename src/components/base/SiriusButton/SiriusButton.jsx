@@ -1,4 +1,4 @@
-import {Button} from "antd";
+import {Button } from "antd";
 import PropTypes from "prop-types";
 
 export const SiriusButton = ({children, type, disabled, loading, onClick}) => {

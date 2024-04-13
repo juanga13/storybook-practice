@@ -14,26 +14,36 @@ export default {
 };
 
 export const Primary = {
-  // children: 'Button',
-  // type = 'primary', 'default', 'dashed', 'text', 'link',
-  type: 'primary',
-  // disabled: true,
-  // loading: true,
-  // onClick,
+  args: {
+    // children: 'Button',
+    // type = 'primary', 'default', 'dashed', 'text', 'link',
+    type: 'primary',
+    // disabled: true,
+    // loading: true,
+    // onClick,
+  }
 };
 
 export const Default = {
-  type: 'default',
+  args: {
+    type: 'default',
+  }
 };
 
 export const Dashed = {
-  type: 'dashed',
+  args: {
+    type: 'dashed',
+  }
 };
 
 export const Text = {
-  type: 'text',
+  args: {
+    type: 'text',
+  }
 };
 
 export const Link = {
-  type: 'link',
+  args: {
+    type: 'link',
+  }
 };

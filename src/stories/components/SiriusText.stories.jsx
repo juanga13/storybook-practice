@@ -16,18 +16,26 @@ export default {
 export const Base = {};
 
 export const Secondary = {
-  variant: 'secondary',
+  args: {
+    variant: 'secondary',
+  },
 };
 
 export const Warning = {
-  variant: 'warning',
+  args: {
+    variant: 'warning',
+  },
 };
 
 export const Danger = {
-  variant: 'danger',
+  args: {
+    variant: 'danger',
+  },
 };
 
 export const Link = {
-  type: 'link',
-  href: '#',
+  args: {
+    type: 'link',
+    href: '#',
+  },
 };

@@ -41,18 +41,24 @@ export default {
 };
 
 export const Base = {
-  // title
-  // children
-  // bordered
-  // style
+  args: {
+    // title
+    // children
+    // bordered
+    // style
+  },
 };
 
 export const Bordered = {
-  bordered: true,
+  args: {
+    bordered: true,
+  },
 };
 
 export const CustomStyled = {
-  style: {
-    backgroundColor: 'red',
+  args: {
+    style: {
+      backgroundColor: '#d6d6d6',
+    },
   },
 };

@@ -17,5 +17,7 @@ export default {
 export const Text = {};
 
 export const Password = {
-  type: 'password',
+  args: {
+    type: 'password',
+  },
 };

@@ -5,6 +5,7 @@ import {SiriusTextInput} from "../../base/SiriusTextInput/SiriusTextInput.jsx";
 import {SiriusButton} from "../../base/SiriusButton/SiriusButton.jsx";
 import ReactLogo from '../../../assets/react.svg';
 import {useState} from "react";
+import { SiriusCheckbox } from "../../base/SiriusCheckbox/SiriusCheckbox.jsx";
 
 export const SiriusSignUp = () => {
 
@@ -12,6 +13,7 @@ export const SiriusSignUp = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
+    const [checkbox, setCheckbox] = useState(false)
 
     const handleSignUp = () => {
         alert('Sign up successful!')
@@ -26,7 +28,8 @@ export const SiriusSignUp = () => {
                 <SiriusTextInput placeholder={'Email'} onChange={(e) => setEmail(e.target.value)} />
                 <SiriusTextInput type={'password'} placeholder={'Password'} onChange={(e) => setPassword(e.target.value)} />
                 <SiriusTextInput type={'password'} placeholder={'Confirm password'} onChange={(e) => setConfirmPassword(e.target.value)} />
-                <SiriusButton disabled={!fullName || !email || !password || !confirmPassword} onClick={handleSignUp}>Sign up</SiriusButton>
+                <SiriusCheckbox text={'I accept the terms and conditions.'} checked={checkbox} onChange={() => setCheckbox(!checkbox)} style />
+                <SiriusButton disabled={!fullName || !email || !password || !confirmPassword || !checkbox} onClick={handleSignUp}>Sign up</SiriusButton>
             </div>
         </SiriusCard>
     )

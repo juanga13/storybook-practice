@@ -1,9 +1,27 @@
+import { Space } from 'antd'
 import './App.css'
+import { SiriusText } from './components/base/SiriusText/SiriusText'
+import { ConfigProvider } from 'antd'
 
 function App() {
 
     return (
-        <h1>Sirius storybook practice</h1>
+        <ConfigProvider
+            theme={{
+                components: {
+                    Button: {
+                        colorPrimary: '#081924',
+                    },
+                    // Input: {
+                    //     colorPrimary: '#eb2f96',
+                    // }
+                },
+            }}
+        >
+            <Space>
+                <SiriusText>{`Welcome to Juanga's Storybook Practice!`}</SiriusText>
+            </Space>
+        </ConfigProvider>
     )
 }
 

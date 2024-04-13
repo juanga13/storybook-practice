@@ -6,3 +6,9 @@
 - Create a branch
 - Deploy locally
 - Create a PR to master
+
+# Juanga notes
+
+## Get started steps
+- `npx storybook@latest init`
+- 

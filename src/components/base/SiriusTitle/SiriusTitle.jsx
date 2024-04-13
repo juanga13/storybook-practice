@@ -14,5 +14,5 @@ export const SiriusTitle = ({title, level}) => {
 
 SiriusTitle.propTypes = {
     title: PropTypes.string,
-    level: PropTypes.oneOf([2, 3, 4, 5]),
+    level: PropTypes.oneOf([1, 2, 3, 4, 5]),
 }
